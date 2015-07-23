@@ -1,42 +1,22 @@
 {% extends "base.html" %}
 
-{% block custom_styles %}
-    <link href="/static/css/archives.css" rel="stylesheet">
-{% endblock %}
-
 {% block main %}
-
-<div class="list-container">
+<div>
 {% for year, articles in archives.items %}
-<h1>{{year}}</h1>
-    <ul class="scale-up-hover-list">
+    <h3>{{ year }}</h3>
+    <ul>
     {% for article in articles %}
-        <li>
-            <div class="date">
-                <p class="month">{{article.create_date|date:"M"}}</p>
-                <p class="day">{{article.create_date|date:"d"}}</p>
-            </div>
-            <div class="item-info-container">
-                <h1>
-                    <a href="{{article.GetAbsoluteURL}}">{{article.title}}</a>
-                </h1>
-                <p class="item-description">
-                    <!--<span class="glyphicon glyphicon-calendar icon"></span>-->
-                    <!--<span class="icon-text">{{article.create_date|date:"H:i:s"}}</span>-->
-                    <span class="glyphicon glyphicon-user icon"></span> 
-                    <span class="icon-text"><a href="www.baidu.com">{{article.author}}</span></a><br>
-                    <span class="glyphicon glyphicon-folder-close icon"></span>
-                    <span class="icon-text">{{article.GetCategory}}</span><br>
-                    <span class="glyphicon glyphicon-tags icon"></span>
-                    <span class="icon-text">
-                        {% for tag in article.GetTags %}{{tag.name}}{% if not forloop.last %},{% endif %}{% endfor %}
-                    </span>
-                </p>
-            </div>
-        </li>
+    <li>
+      <div>
+        <h4>
+          <a href="{{ article.GetAbsoluteURL }}">
+          {{ article.title }}
+          </a>
+        </h4>
+      </div>
+    </li>
     {% endfor %}
     </ul>
 {% endfor %}
 </div>
-
 {% endblock main %}

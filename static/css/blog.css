@@ -3,9 +3,8 @@
  */
 
 body {
-  font-family: 'Open Sans','Helvetica Neue',"Hiragino Sans GB",sans-serif, Arial,/*'Microsoft YaHei',*/Verdana,"BitStream vera Sans",Tahoma,Helvetica,Sans-serif
+  font-family: Georgia, "Times New Roman", Times, serif;
   color: #555;
-  margin-top: 90px;
 }
 
 h1, .h1,
@@ -15,8 +14,7 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 0;
-  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-family: 'Microsoft YaHei',Verdana,"BitStream vera Sans";
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: #333;
 }
@@ -101,14 +99,13 @@ h6, .h6 {
  */
 
 .blog-main {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
-  color: #555;
 }
 
 /* Sidebar modules for boxing content */
 .sidebar-module {
-  padding: 5px;
+  padding: 15px;
   margin: 0 -15px 15px;
 }
 .sidebar-module-inset {
@@ -143,44 +140,14 @@ h6, .h6 {
 .blog-post {
   margin-bottom: 60px;
 }
-.blog-post-title a {
+.blog-post-title {
   margin-bottom: 5px;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #4C4C4C;
+  font-size: 40px;
 }
-
-.blog-post-title a:hover {
-  color: #2970A6;
-}
-
 .blog-post-meta {
   margin-bottom: 20px;
-  margin-top: -5px;
   color: #999;
 }
-
-.blog-post-meta .icon {
-    /* padding-left: 4px; */
-    /* color: #248dc1 !important; */
-    font-size: 12px;
-}
-
-.blog-post-meta .icon-text {
-  /* padding-left: 1px; */
-  font-size: 12px;
-}
-
-.blog-post .readmore {
-  /* font-size: 13px; */
-  margin-bottom: 20px;
-}
-
-.blog-post .line {
-  margin-top: -10px;
-}
-
 
 
 /*
@@ -197,23 +164,3 @@ h6, .h6 {
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
-
-
-nav.navbar-findcond { background: #222; border-color: #ccc; box-shadow: 0 0 2px 0 #ccc; }
-nav.navbar-findcond a { color: #9d9d9d; }
-nav.navbar-findcond ul.navbar-nav a { color: #9d9d9d; border-style: solid; border-width: 0 0 2px 0; border-color: #222; }
-nav.navbar-findcond ul.navbar-nav a:hover,
-nav.navbar-findcond ul.navbar-nav a:visited,
-nav.navbar-findcond ul.navbar-nav a:focus,
-nav.navbar-findcond ul.navbar-nav a:active { background: #222; }
-nav.navbar-findcond ul.navbar-nav a:hover { border-color: #9d9d9d; }
-nav.navbar-findcond li.divider { background: #ccc; }
-nav.navbar-findcond button.navbar-toggle { background: #9d9d9d; border-radius: 2px; }
-nav.navbar-findcond button.navbar-toggle:hover { background: #999; }
-nav.navbar-findcond button.navbar-toggle > span.icon-bar { background: #fff; }
-nav.navbar-findcond ul.dropdown-menu { border: 0; background: #fff; border-radius: 4px; margin: 4px 0; box-shadow: 0 0 4px 0 #ccc; }
-nav.navbar-findcond ul.dropdown-menu > li > a { color: #444; }
-nav.navbar-findcond ul.dropdown-menu > li > a:hover { background: #9d9d9d; color: #fff; }
-nav.navbar-findcond span.badge { background: #9d9d9d; font-weight: normal; font-size: 11px; margin: 0 4px; }
-nav.navbar-findcond span.badge.new { background: rgba(255, 0, 0, 0.8); color: #fff; }
-

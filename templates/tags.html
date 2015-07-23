@@ -1,0 +1,5 @@
+{% for tag in tags %}
+  <a href="{{ tag.GetAbsoluteURL }}" style="font-size: 14px;">
+    {{ tag.name }}
+  </a>
+{% endfor %}
