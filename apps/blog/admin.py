@@ -1,15 +1,11 @@
 from django.contrib import admin
-from .models import Article, Tag, Category
+from models import Article, Tag, Category
+from adminfiles.admin import FilePickerAdmin
 
-# Register your models here.
-
-admin.site.register(Article)
 admin.site.register(Tag)
 admin.site.register(Category)
 
+class PostAdmin(FilePickerAdmin):
+    adminfiles_fields = ('text',)
 
-#class ArticleAdmin(admin.ModelAdmin):
-#        readonly_fields = ('create_date',)
-    
-
-#admin.site.register(Article, ArticleAdmin)
+admin.site.register(Article, PostAdmin)

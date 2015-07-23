@@ -34,6 +34,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'adminfiles',
+    'sorl.thumbnail',
     'django_markdown',
     'apps.blog',
     'haystack',
@@ -99,4 +101,8 @@ HAYSTACK_CONNECTIONS = {
 }
 
 HAYSTACK_SEARCH_RESULTS_PER_PAGE = 6
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = '/data/media/'
 
