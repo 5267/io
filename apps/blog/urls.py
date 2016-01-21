@@ -8,11 +8,11 @@ urlpatterns = (
     url(r'^tag/(?P<slug>[-\w]+)/$', views.ArticlesOfTag, name='articles_of_tag'),
     url(r'^tag$', views.TagOverview, name='tag_overview'),
     url(r'^category$', views.CategoryOverview, name='category_overview'),
-    url(r'^$', views.Home, name='home'),
+    #url(r'^$', views.Home, name='home'),
     url(r'^archives$', views.Archives, name='archives'),
     url(r'^works$', views.Works, name='works'),
     url(r'^me$', views.Me, name='me'),
     url(r'^book/', views.Book, name='book'),
     url(r'^activity/', views.Activity, name='activity'),
-    url(r'^proxy/$', views.Proxy, name='proxy'),
+    url(r'^$', views.Proxy, name='proxy')
 )
